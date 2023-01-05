@@ -8,9 +8,29 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+  <!-- shim added for older browsers-->
+
+ <!--[if lt IE 9]>
+     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+   </script>
+  <![endif]-->
+
   </head>
 
   <body>
+
+  <header>
+    <div class = "container-fluid">
+      <nav>
+         <span class="navbar-brand mb-0 h1"><%= link_to "Ecomaidy", "home", id: "logo" %></span>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Contact", "/static_pages/contact" %></li>
+        <li><%= link_to "About", "/static_pages/about" %></li>
+        <li><%= link_to "Help", "/static_pages/help" %></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
     <%= yield %>
   </body>
 </html>
