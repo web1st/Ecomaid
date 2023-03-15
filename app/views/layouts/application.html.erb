@@ -18,11 +18,13 @@
 <div class="position-absolute top-0 start-0">
     <%= render "layouts/header" %>
     </div>
- <div class="position-absolute top-70 start-50">
+ <div class="container">
         <%= yield %>
-        </div>
+  </div>
 
      <%= render "layouts/footer" %>
+
+     <%= debug(params)%>
 </div>
   </body>
 </html>
