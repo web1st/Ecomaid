@@ -54,22 +54,42 @@ p {
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
+#navbar {
+  float:right;
+  padding-left: 10px;
+  margin-right: 20px;
+  background: opacity($color: #000000);
   &:hover {
     color: white;
+    opacity: .87;
     text-decoration: none;
   }
 }
 
+#logo {
+  float: left;
+  margin-left: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 10px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    opacity: .87;
+    text-decoration: none;
+  }
+
+}
+
+
+
+
+/* main */
+
 /* footer */
+
 
 footer {
   margin-top: 45px;
