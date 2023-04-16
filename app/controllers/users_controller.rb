@@ -13,9 +13,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params) #Not the final implemntation
     if @user.save
       flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      redirect_to users_path
     else
-      render "new"
+      puts @user.errors.full_messages
+      render :new, status: :unprocessable_entity, content_type: "text/html"
     end
   end
     private

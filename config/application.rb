@@ -18,5 +18,6 @@ module Ecomaid
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    routes.default_url_options[:trailing_slash] = true
   end
 end
